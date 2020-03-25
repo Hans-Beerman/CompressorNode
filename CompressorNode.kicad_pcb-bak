@@ -10,14 +10,6 @@
   )
 
   (page A4)
-  (title_block
-    (title CompressorNode)
-    (date 2020-03-25)
-    (rev "V0.4 Concept")
-    (company "MakerSpace Leiden")
-    (comment 1 "Getekend door Hans Beerman")
-  )
-
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)

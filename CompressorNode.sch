@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
-Date "2020-03-24"
-Rev "V0.3 Concept"
+Date "2020-03-25"
+Rev "V0.4 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -207,7 +207,7 @@ F 1 "Screw_Terminal_01x03" H 8350 1450 50  0000 L CNN
 F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00288_1x03_P5.08mm_Horizontal" H 8200 1200 50  0001 C CNN
 F 3 "~" H 8200 1200 50  0001 C CNN
 	1    8200 1200
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 Wire Wire Line
 	7300 900  7300 800 
@@ -229,20 +229,6 @@ $EndComp
 Wire Wire Line
 	6350 850  6350 900 
 $Comp
-L PC814:PC814 OK1
-U 1 1 5E862303
-P 6900 5400
-F 0 "OK1" H 6950 5770 50  0000 C CNN
-F 1 "PC814" H 6950 5679 50  0000 C CNN
-F 2 "PC814:DIL04" H 6900 5400 50  0001 L BNN
-F 3 "" H 6900 5400 50  0001 L BNN
-F 4 "unknown" H 6900 5400 50  0001 L BNN "Field4"
-F 5 "9707662" H 6900 5400 50  0001 L BNN "Field5"
-F 6 "" H 6900 5400 50  0001 L BNN "Field6"
-	1    6900 5400
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x02 J11
 U 1 1 5E862309
 P 8200 5450
@@ -259,7 +245,7 @@ U 1 1 5E86230F
 P 7650 5500
 F 0 "R9" V 7750 5500 50  0000 C CNN
 F 1 "220k" V 7650 5500 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 5500 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal" V 7580 5500 50  0001 C CNN
 F 3 "~" H 7650 5500 50  0001 C CNN
 	1    7650 5500
 	0    1    1    0   
@@ -270,7 +256,7 @@ U 1 1 5E862315
 P 7650 5300
 F 0 "R8" V 7750 5300 50  0000 C CNN
 F 1 "220k" V 7650 5300 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 7580 5300 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0614_L14.3mm_D5.7mm_P20.32mm_Horizontal" V 7580 5300 50  0001 C CNN
 F 3 "~" H 7650 5300 50  0001 C CNN
 	1    7650 5300
 	0    1    1    0   
@@ -319,9 +305,9 @@ F 3 "~" H 5750 850 50  0001 C CNN
 $EndComp
 Text Notes 8300 1135 0    49   ~ 0
 NC
-Text Notes 8300 1240 0    49   ~ 0
+Text Notes 8300 1350 0    49   ~ 0
 NO
-Text Notes 8300 1340 0    49   ~ 0
+Text Notes 8300 1250 0    49   ~ 0
 Common
 Text Notes 8300 5350 0    49   ~ 0
 L1
@@ -1041,4 +1027,18 @@ Wire Wire Line
 	3050 5250 3150 5250
 Wire Wire Line
 	2300 5150 3600 5150
+$Comp
+L PC814:PC814 OK1
+U 1 1 5E7B5CDC
+P 6800 5400
+F 0 "OK1" H 6850 5770 50  0000 C CNN
+F 1 "PC814" H 6850 5679 50  0000 C CNN
+F 2 "Package_DIP:DIP-4_W7.62mm" H 6800 5400 50  0001 L BNN
+F 3 "" H 6800 5400 50  0001 L BNN
+F 4 "unknown" H 6800 5400 50  0001 L BNN "Field4"
+F 5 "9707662" H 6800 5400 50  0001 L BNN "Field5"
+F 6 "" H 6800 5400 50  0001 L BNN "Field6"
+	1    6800 5400
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

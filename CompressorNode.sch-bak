@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
 Date "2020-04-01"
-Rev "V0.9 Concept"
+Rev "V0.10 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -414,7 +414,7 @@ L Device:R R5
 U 1 1 5E862444
 P 5700 1900
 F 0 "R5" V 5600 1850 50  0000 L CNN
-F 1 "1k" V 5700 1850 50  0000 L CNN
+F 1 "150R" V 5700 1850 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 1900 50  0001 C CNN
 F 3 "~" H 5700 1900 50  0001 C CNN
 	1    5700 1900

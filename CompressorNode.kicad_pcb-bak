@@ -13,7 +13,7 @@
   (title_block
     (title CompressorNode)
     (date 2020-04-01)
-    (rev "V0.9 Concept")
+    (rev "V0.10 Concept")
     (company "MakerSpace Leiden")
     (comment 1 "Getekend door Hans Beerman")
   )
@@ -42,7 +42,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 0.75)
     (user_trace_width 1)
@@ -481,7 +481,7 @@
     (fp_text reference R5 (at 3.81 -2.37) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 1k (at 3.81 2.37) (layer F.SilkS)
+    (fp_text value 150R (at 3.81 2.37) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text user %R (at 3.81 0 270) (layer F.Fab)
@@ -2105,7 +2105,7 @@
   (gr_text Inp. (at 120.015 123.19) (layer F.SilkS) (tstamp 5E7BBD23)
     (effects (font (size 1.2 1.2) (thickness 0.3)))
   )
-  (gr_text "Compressor/Laser cutter Node\nV0.9 Concept 2020\nMakerspace Leiden" (at 190.5 124.46) (layer F.SilkS) (tstamp 5E7BB9D5)
+  (gr_text "Compressor/Laser cutter Node\nV0.10 Concept 2020\nMakerspace Leiden" (at 190.5 124.46) (layer F.SilkS) (tstamp 5E7BB9D5)
     (effects (font (size 1.7 1.7) (thickness 0.4)))
   )
   (gr_line (start 197.485 71.12) (end 194.945 71.12) (layer F.SilkS) (width 0.22) (tstamp 5E7BB891))

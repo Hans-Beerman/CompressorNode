@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
-Date "2020-04-01"
-Rev "V0.10 Concept"
+Date "2020-04-02"
+Rev "V0.11 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -797,10 +797,8 @@ F 3 "~" H 2100 3150 50  0001 C CNN
 	1    2100 3150
 	-1   0    0    -1  
 $EndComp
-Text GLabel 2600 3150 2    50   BiDi ~ 0
+Text GLabel 3300 3150 2    50   BiDi ~ 0
 GPIO4_U1TXD
-Wire Wire Line
-	2300 3150 2600 3150
 $Comp
 L power:GND #PWR07
 U 1 1 5E807BC3
@@ -821,11 +819,11 @@ L power:+3.3V #PWR06
 U 1 1 5E80DB19
 P 2650 3050
 F 0 "#PWR06" H 2650 2900 50  0001 C CNN
-F 1 "+3.3V" V 2665 3178 50  0000 L CNN
+F 1 "+3.3V" H 2400 3200 50  0000 L CNN
 F 2 "" H 2650 3050 50  0001 C CNN
 F 3 "" H 2650 3050 50  0001 C CNN
 	1    2650 3050
-	0    1    1    0   
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2300 3050 2650 3050
@@ -1049,4 +1047,27 @@ Text Notes 5350 6750 0    49   ~ 10
 A
 Text Notes 5350 6900 0    49   ~ 10
 K
+$Comp
+L Device:R R13
+U 1 1 5E870D9B
+P 2950 3050
+F 0 "R13" V 2800 3050 50  0000 C CNN
+F 1 "4k7" V 2950 3050 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 2880 3050 50  0001 C CNN
+F 3 "~" H 2950 3050 50  0001 C CNN
+	1    2950 3050
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2650 3050 2800 3050
+Connection ~ 2650 3050
+Wire Wire Line
+	2300 3150 3200 3150
+Wire Wire Line
+	3100 3050 3200 3050
+Wire Wire Line
+	3200 3050 3200 3150
+Connection ~ 3200 3150
+Wire Wire Line
+	3200 3150 3300 3150
 $EndSCHEMATC

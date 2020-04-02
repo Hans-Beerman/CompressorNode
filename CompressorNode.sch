@@ -6,7 +6,7 @@ encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
 Date "2020-04-02"
-Rev "V0.11 Concept"
+Rev "V0.12 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -889,17 +889,6 @@ F 3 "" H 2650 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2300 3950 2650 3950
-$Comp
-L power:+3.3V #PWR022
-U 1 1 5E87EA0B
-P 2650 3750
-F 0 "#PWR022" H 2650 3600 50  0001 C CNN
-F 1 "+3.3V" V 2665 3878 50  0000 L CNN
-F 2 "" H 2650 3750 50  0001 C CNN
-F 3 "" H 2650 3750 50  0001 C CNN
-	1    2650 3750
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	2300 3750 2650 3750
 $Comp
@@ -1070,4 +1059,15 @@ Wire Wire Line
 Connection ~ 3200 3150
 Wire Wire Line
 	3200 3150 3300 3150
+$Comp
+L power:+5V #PWR022
+U 1 1 5E8667F5
+P 2650 3750
+F 0 "#PWR022" H 2650 3600 50  0001 C CNN
+F 1 "+5V" V 2650 3850 50  0000 L CNN
+F 2 "" H 2650 3750 50  0001 C CNN
+F 3 "" H 2650 3750 50  0001 C CNN
+	1    2650 3750
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

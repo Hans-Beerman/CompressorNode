@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
-Date "2020-04-04"
-Rev "V0.13 Concept"
+Date "2020-04-12"
+Rev "V0.14 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -430,12 +430,12 @@ Wire Wire Line
 $Comp
 L power:GND #PWR013
 U 1 1 5E862388
-P 5750 1400
-F 0 "#PWR013" H 5750 1150 50  0001 C CNN
-F 1 "GND" H 5755 1227 50  0000 C CNN
-F 2 "" H 5750 1400 50  0001 C CNN
-F 3 "" H 5750 1400 50  0001 C CNN
-	1    5750 1400
+P 5750 1500
+F 0 "#PWR013" H 5750 1250 50  0001 C CNN
+F 1 "GND" H 5755 1327 50  0000 C CNN
+F 2 "" H 5750 1500 50  0001 C CNN
+F 3 "" H 5750 1500 50  0001 C CNN
+	1    5750 1500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1070,4 +1070,43 @@ F 3 "" H 2650 3750 50  0001 C CNN
 	1    2650 3750
 	0    1    1    0   
 $EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J14
+U 1 1 5E92A76E
+P 4900 1300
+F 0 "J14" H 4850 1100 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 4850 1000 50  0000 L CNN
+F 2 "TerminalBlock_RND:TerminalBlock_RND_205-00287_1x02_P5.08mm_Horizontal" H 4900 1300 50  0001 C CNN
+F 3 "~" H 4900 1300 50  0001 C CNN
+	1    4900 1300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR027
+U 1 1 5E9303AE
+P 5100 1500
+F 0 "#PWR027" H 5100 1250 50  0001 C CNN
+F 1 "GND" H 5105 1327 50  0000 C CNN
+F 2 "" H 5100 1500 50  0001 C CNN
+F 3 "" H 5100 1500 50  0001 C CNN
+	1    5100 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1500 5750 1400
+Wire Wire Line
+	5100 1500 5100 1400
+Wire Wire Line
+	5100 1300 5400 1300
+Wire Wire Line
+	5400 1300 5400 900 
+Wire Wire Line
+	5400 900  5750 900 
+Connection ~ 5750 900 
+Text Notes 4650 1300 0    49   ~ 0
++5V
+Text Notes 4650 1450 0    49   ~ 0
+GND
+Text Notes 4750 1150 0    59   ~ 12
+Power
 $EndSCHEMATC

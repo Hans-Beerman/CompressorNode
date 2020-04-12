@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
-Date "2020-04-02"
-Rev "V0.12 Concept"
+Date "2020-04-04"
+Rev "V0.13 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""

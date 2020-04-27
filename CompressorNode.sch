@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
 Title "CompressorNode"
-Date "2020-04-20"
-Rev "V0.16 Concept"
+Date "2020-04-27"
+Rev "V0.17 Concept"
 Comp "MakerSpace Leiden"
 Comment1 "Getekend door Hans Beerman"
 Comment2 ""
@@ -164,7 +164,7 @@ Wire Wire Line
 Text GLabel 6000 5400 0    50   Output ~ 0
 GPI36_U1RXD
 Text Notes 7050 2600 0    59   ~ 12
-Schakelaar 1
+Schakelaar On
 $Comp
 L power:GND #PWR020
 U 1 1 5E8622A2
@@ -414,7 +414,7 @@ L Device:R R5
 U 1 1 5E862444
 P 5700 1900
 F 0 "R5" V 5600 1850 50  0000 L CNN
-F 1 "150R" V 5700 1800 50  0000 L CNN
+F 1 "1k" V 5700 1800 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 5630 1900 50  0001 C CNN
 F 3 "~" H 5700 1900 50  0001 C CNN
 	1    5700 1900
@@ -491,7 +491,7 @@ Wire Wire Line
 Wire Wire Line
 	6350 4300 6550 4300
 Text Notes 7050 3900 0    59   ~ 12
-Schakelaar 2
+Schakelaar Off
 $Comp
 L power:GND #PWR021
 U 1 1 5E82F882
@@ -695,9 +695,9 @@ $EndComp
 Wire Wire Line
 	5400 6350 5400 6250
 Text Notes 2900 6600 0    59   ~ 12
-LED 1
+LED 1\nCompressor on
 Text Notes 5600 6600 0    59   ~ 12
-LED 2
+LED 2\nMotor on
 Text GLabel 2600 2250 2    50   BiDi ~ 0
 GPIO13_I2C-SDA
 Text GLabel 2600 2350 2    50   BiDi ~ 0
@@ -1191,7 +1191,7 @@ L Device:R R15
 U 1 1 5EAA21A6
 P 4850 3500
 F 0 "R15" V 4950 3500 50  0000 C CNN
-F 1 "4k7" V 4850 3500 50  0000 C CNN
+F 1 "47k" V 4850 3500 50  0000 C CNN
 F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4780 3500 50  0001 C CNN
 F 3 "~" H 4850 3500 50  0001 C CNN
 	1    4850 3500
